@@ -1,8 +1,11 @@
-## Setup
-1. Install dbt-core and dbt-redshift.
-2. Create a `profiles.yml` in your `~/.dbt/` directory with your Redshift credentials:
+# DBT + Redshift Project
 
-yaml
+## Setup
+
+1. Install dbt-core and dbt-redshift.
+2. Create a `profiles.yml` file in your `~/.dbt/` directory with your Redshift credentials:
+
+```yaml
 my_project:
   target: dev
   outputs:
