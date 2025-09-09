@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: netflix_database
+    schema: raws
+    tables:
+     - name: tags
+       identifier: userId
+     - name: movies
+       identifier: movieId
+     - name: genome_tags
+       identifier: tagId
+     - name: ratings
+       identifier: userId
+     - name: links
+       identifier: movieId
+     - name: genome_scores
+       identifier: movieId
