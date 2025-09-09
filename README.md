@@ -1,15 +1,16 @@
-Welcome to your new dbt project!
+## Setup
+1. Install dbt-core and dbt-redshift.
+2. Create a `profiles.yml` in your `~/.dbt/` directory with your Redshift credentials:
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+yaml
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: <your-cluster>.redshift.amazonaws.com
+      user: <username>
+      password: <password>
+      dbname: <database>
+      schema: <schema>
+      port: 5439
