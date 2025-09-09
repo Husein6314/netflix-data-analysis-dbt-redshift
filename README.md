@@ -1,5 +1,12 @@
 # 🍿 Netflix Data Warehouse  
 
+
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![dbt](https://img.shields.io/badge/dbt-1.10.10-orange.svg)
+![Amazon Redshift](https://img.shields.io/badge/Redshift-Database-red.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
 ## 📌 Overview  
 This project builds a **Netflix Data Warehouse** using **Amazon Redshift** as the data warehouse and **dbt** for transformation, testing, and documentation.  
 It demonstrates how a **modern data stack** can handle raw Netflix-style datasets (movies, users, ratings, tags) to enable analytics such as user engagement, movie popularity, and recommendation patterns.  
